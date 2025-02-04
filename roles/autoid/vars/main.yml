@@ -1,0 +1,21 @@
+---
+# vars for autoid
+autoid_user: autoid
+autoid_group: "{{ autoid_user }}"
+passwd: Welcome!23
+keypass: Acc#1234
+# autoid app owner home dir, need to match user name
+usr_dir: /home/{{ autoid_user }}
+# all third party dependencies home dir, can be any dir
+home_dir: /opt/apps
+# autoid application installation dir, need to be under user home dir
+install_dir: /home/{{ autoid_user }}/autoid-config
+# https://dlcdn.apache.org/spark/spark-3.3.2/spark-3.3.2-bin-hadoop2.7.tgz
+# If change spark to 3.3.2, change both spark_dir and spark
+spark_dir: spark-3.3.2
+spark: spark-3.3.2-bin-hadoop3
+mongo: mongodb-linux-x86_64-rhel80-4.4.15
+AutoID_version: 2022.11.11
+db_type: mongo
+autoid_key_id: 950559411be422bb48e643b433559b5655e5f0f0hs
+autoid_key:
